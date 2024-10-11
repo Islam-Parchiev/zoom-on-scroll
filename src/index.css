@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Kalnia:100,200,300,regular,500,600,700);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  overflow-x: hidden;
+}
 @layer components { 
+  .kalnia {
+    font-family: 'Kalnia',serif;
+  }
   .image {
     mask-image:url("./assets/o.png");
     mask-size: contain;
@@ -13,6 +19,9 @@
   .text-stroke {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
+  }
+  .perspective {
+    perspective: 2200px;
   }
 }
